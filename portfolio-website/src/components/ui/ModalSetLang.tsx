@@ -35,7 +35,7 @@ export default function ModalSetLang() {
     <div className={s.content}>
       <button
         onClick={toggleShow}
-        className={`header__theme-btn header__lang-btn select_line ring-white ring-opacity-60 focus:outline-none focus:ring-2 ${isShow ? 'select_line-active' : ''}`}
+        className={`header__theme-btn header__lang-btn select_line ring-white ring-opacity-60 focus:outline-none focus:ring-4 ${isShow ? 'select_line-active' : ''}`}
       >
         {getLanguageCode()}
       </button>

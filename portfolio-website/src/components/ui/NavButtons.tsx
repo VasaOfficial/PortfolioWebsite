@@ -11,7 +11,7 @@ export default function NavButtons() {
     <div className="header mr-14">
       <button
         onClick={hocToggleLightmode}
-        className="header__theme-btn cursor-pointer ring-white ring-opacity-60 focus:outline-none focus:ring-2"
+        className="header__theme-btn cursor-pointer ring-white ring-opacity-60 focus:outline-none focus:ring-4"
         title={isLight ? 'main.theme.dark' : 'main.theme.light'}
       >
         {isLight ? (
