@@ -6,10 +6,14 @@ import { useTranslation } from 'react-i18next'
 import toast, { Toaster } from 'react-hot-toast'
 import Image from 'next/image'
 import MyImage from '../../public/assets/wp1892227.jpg'
+import { HiDownload } from 'react-icons/hi'
+import Link from 'next/link'
+import { useSectionInView } from '~/lib/hooks'
 
 import '~/styles/Hero.scss'
 
 export default function Home() {
+  const { ref } = useSectionInView('About')
   const { t } = useTranslation()
   const [isError, setError] = useState(false)
 
@@ -55,9 +59,12 @@ export default function Home() {
   }
 
   return (
-    <section className="z-50 m-auto flex w-full max-w-[50%] justify-between">
+    <div
+      ref={ref}
+      className="z-50 m-auto mt-28 flex w-full max-w-[50%] justify-between"
+    >
       <Toaster />
-      <div className="flex flex-col items-start justify-items-start">
+      <div className="flex flex-col items-start">
         <div className="text-left">
           <p className="max-w-[600px]">
             <code>
@@ -115,11 +122,17 @@ export default function Home() {
                   {isError ? 'pjaworski.dev@gmail.com' : t('hero.email-copy')}
                 </button>
               </div>
+              <div className="hero_socials__links">
+                <Link href="/CV.pdf" className="grho grho__sml">
+                  Download CV
+                  <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="hero_l2">
+      <div>
         <div className="rfc">
           <div className="rfcg rfcg-1"></div>
           <div className="rfcg rfcg-2"></div>
@@ -235,6 +248,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

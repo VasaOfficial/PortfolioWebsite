@@ -2,14 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.borderBlack {
-  @apply border border-black/10;
-}
-
 :root {
-  --font-body: 'Noto Sans', 'Inter', Arial, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-    sans-serif;
   font-family: var(--font-body);
   font-family: monospace;
   line-height: 1.5em;
@@ -31,15 +24,6 @@
   --border-color-2: #2a2a2e;
 
   --basic-link-color: #2dd4bf;
-  --tone-05: rgba(255, 255, 255, 0.04);
-  --tone-1: rgba(42, 42, 45, 0.75);
-  --tone-1-5: rgba(255, 255, 255, 0.15);
-  --tone-2: rgba(225, 235, 240, 0.2);
-  --tone-3: rgba(255, 255, 255, 0.3);
-  --tone-4: rgba(255, 255, 255, 0.4);
-  --tone-5: rgba(255, 255, 255, 0.5);
-  --vp-header: 70px;
-  --box-shadow: 1px 1px 0px 1px #1b1c1d;
 
   /* ---  GRAY  --- */
   --gray-100: hsl(215, 20%, 95%);
@@ -171,103 +155,6 @@ svg[aria-hidden='true'] {
 
 .app_content {
   padding: 0 40px;
-}
-
-.header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: var(--vp-header);
-}
-
-a.active_lang {
-  pointer-events: none;
-  font-weight: 400;
-  color: var(--text-color-contrast);
-}
-
-.header__lang-btn {
-  padding: 5px 10px;
-  height: 40px;
-  min-width: 46px;
-  font-size: 0.88rem;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.header__lang-btn img {
-  width: 18px;
-  height: auto;
-  margin-right: 5px;
-}
-
-.header__theme-btn {
-  width: 46px;
-  height: 46px;
-  margin-right: 10px;
-  padding: 0;
-}
-
-.header__theme-btn svg {
-  display: block;
-  font-size: 21px;
-  width: auto;
-  height: 21px;
-  line-height: 21px;
-}
-
-.header button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  font-weight: 500;
-  height: 44px;
-  width: 56px;
-  border: none;
-  border: 1px solid var(--border-color-2);
-  border: 0.9px solid var(--border-color-2);
-  background-color: #1f1f23;
-  border-radius: 12px;
-}
-
-.header button,
-.header path,
-.header circle,
-.header line {
-  stroke: #82878d;
-  color: #82878d;
-}
-
-.header button:hover,
-.header button:hover path,
-.header button:hover circle,
-.header button:hover line {
-  stroke: #b2b8bf;
-  color: #b2b8bf;
-  border-color: #707478;
-}
-
-body.lightModeOn .header button {
-  background-color: var(--main-bg-color);
-  border-width: 1px;
-}
-
-body.lightModeOn .header button,
-body.lightModeOn .header path,
-body.lightModeOn .header circle,
-body.lightModeOn .header line {
-  stroke: #9dacbc;
-  color: #9dacbc;
-}
-
-body.lightModeOn .header button:hover,
-body.lightModeOn .header button:hover path,
-body.lightModeOn .header button:hover circle,
-body.lightModeOn .header button:hover line {
-  stroke: #000;
-  color: #000;
-  border-color: rgba(121, 125, 132, 0.2);
 }
 
 /* body.lightModeOn .hero_pfp, */
@@ -550,10 +437,6 @@ body .hero_socials__email {
   background-color: #eef5f8;
 }
 
-.projects {
-  padding-top: 40px;
-}
-
 .projects__item {
   display: flex;
   flex-direction: column-reverse;
@@ -647,30 +530,6 @@ body.lightModeOn .projects__img {
   height: 100%;
   object-fit: cover;
   object-position: center top;
-}
-
-.projects__title {
-  margin-top: 0;
-}
-
-.projects__title a {
-  position: relative;
-  display: inline;
-  padding: 3px 4px;
-  margin-left: -3px;
-  color: var(--main-text-color);
-}
-
-.projects__title a:hover {
-  background-color: transparent;
-  text-decoration: underline;
-  text-underline-offset: 0.3em;
-  text-decoration-thickness: 2px;
-  text-decoration-color: var(--border-color);
-}
-
-body.lightModeOn .projects__title a:hover {
-  text-decoration-color: var(--gray-400);
 }
 
 .section__title {

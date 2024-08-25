@@ -15,11 +15,7 @@ export default function ExperienceSection() {
   const { theme } = useThemeContext()
 
   return (
-    <section
-      ref={ref}
-      id="experience"
-      className="relative mb-28 scroll-mt-28 sm:mb-40"
-    >
+    <div ref={ref} className="relative mb-28 scroll-mt-28 sm:mb-40">
       <div>
         <div>
           <VerticalTimeline animate lineColor="#2DD4BF">
@@ -67,6 +63,6 @@ export default function ExperienceSection() {
           </VerticalTimeline>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

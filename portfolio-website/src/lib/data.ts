@@ -8,12 +8,12 @@ export const links = [
     hash: '#about',
   },
   {
-    name: 'Timeline',
-    hash: '#timeline',
-  },
-  {
     name: 'Skills',
     hash: '#skills',
+  },
+  {
+    name: 'Timeline',
+    hash: '#timeline',
   },
   {
     name: 'Projects',

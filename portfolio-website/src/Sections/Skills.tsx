@@ -1,3 +1,4 @@
+'use client'
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import SkillsItem from '~/components/ui/skills'
 import Image from 'next/image'
@@ -17,10 +18,12 @@ import ReactIcon from '../../public/assets/skills/react.svg'
 import TerraformIcon from '../../public/assets/skills/terraform.svg'
 import TypescriptIcon from '../../public/assets/skills/typescript.svg'
 import VimIcon from '../../public/assets/skills/vim.svg'
+import { useSectionInView } from '~/lib/hooks'
 
 export default function Skills() {
+  const { ref } = useSectionInView('Skills')
   return (
-    <section className={`mx-auto my-40 max-w-[50%] pb-2`}>
+    <div ref={ref} className="mx-auto my-40 max-w-[50%]">
       <div className="-mr-2.5 flex flex-wrap items-stretch justify-start grayscale-[0.3]">
         <SkillsItem title="Linux">
           <Image src={LinuxIcon} alt="Linux" width={38} height={38} />
@@ -82,6 +85,6 @@ export default function Skills() {
           <Image src={VimIcon} alt="Linux" width={38} height={38} />
         </SkillsItem>
       </div>
-    </section>
+    </div>
   )
 }

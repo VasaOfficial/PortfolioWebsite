@@ -1,21 +1,29 @@
-import Home from '~/Sections/Home'
+import About from '~/Sections/About'
+import Projects from '~/Sections/Project'
 import Skills from '~/Sections/Skills'
 import Timeline from '~/Sections/Timeline'
 import Header from '~/components/Navbar'
-import NavButtons from '~/components/ui/NavButtons'
 import { LampDemo } from '~/components/ui/lamp'
 
 export default function HomePage() {
   return (
     <main className="flex h-auto min-h-screen flex-col bg-slate-950">
-      <div className="flex w-full items-start justify-between p-4">
-        <Header />
-        <NavButtons />
-      </div>
-      <LampDemo />
-      <Home />
-      <Skills />
-      <Timeline />
+      <Header />
+      <section id="home">
+        <LampDemo />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="timeline">
+        <Timeline />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
     </main>
   )
 }
