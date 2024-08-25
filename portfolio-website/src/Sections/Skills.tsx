@@ -23,138 +23,63 @@ export default function Skills() {
     <section className={`mx-auto my-40 max-w-[50%] pb-2`}>
       <div className="-mr-2.5 flex flex-wrap items-stretch justify-start grayscale-[0.3]">
         <SkillsItem title="Linux">
-          <Image
-            src={LinuxIcon}
-            alt="Linux"
-            width={38}
-            height={38}
-          />
+          <Image src={LinuxIcon} alt="Linux" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="AWS">
-          <Image
-            src={AwsIcon}
-            alt="Linux"
-            width={38}
-            height={38}
-          />
+          <Image src={AwsIcon} alt="Linux" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Docker">
-          <Image
-            src={DockerIcon}
-            alt="Linux"
-            width={38}
-            height={38}
-          />
+          <Image src={DockerIcon} alt="Linux" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Github">
-          <Image
-            src={GitIcon}
-            alt="Linux"
-            width={38}
-            height={38}
-          />
+          <Image src={GitIcon} alt="Linux" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Javascript">
-          <Image
-            src={JavascriptIcon}
-            alt="Linux"
-            width={38}
-            height={38}
-          />
+          <Image src={JavascriptIcon} alt="Linux" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Jenkins">
-          <Image
-            src={JenkinsIcon}
-            alt="Linux"
-            width={38}
-            height={38}
-          />
+          <Image src={JenkinsIcon} alt="Linux" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Kubernetes">
-          <Image
-            src={KubernetesIcon}
-            alt="Linux"
-            width={38}
-            height={38}
-          />
+          <Image src={KubernetesIcon} alt="Linux" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Next.js">
-          <Image
-            src={NextjsIcon}
-            alt="Linux"
-            width={38}
-            height={38}
-          />
+          <Image src={NextjsIcon} alt="Linux" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Node.js">
-          <Image
-            src={NodejsIcon}
-            alt="Linux"
-            width={38}
-            height={38}
-          />
+          <Image src={NodejsIcon} alt="Linux" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Postgresql">
-          <Image
-            src={PostgresqlIcon}
-            alt="Linux"
-            width={38}
-            height={38}
-          />
+          <Image src={PostgresqlIcon} alt="Linux" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Python">
-          <Image
-            src={PythonIcon}
-            alt="Linux"
-            width={38}
-            height={38}
-          />
+          <Image src={PythonIcon} alt="Linux" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="React">
-          <Image
-            src={ReactIcon}
-            alt="Linux"
-            width={38}
-            height={38}
-          />
+          <Image src={ReactIcon} alt="Linux" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Terraform">
-          <Image
-            src={TerraformIcon}
-            alt="Linux"
-            width={38}
-            height={38}
-          />
+          <Image src={TerraformIcon} alt="Linux" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Typescript">
-          <Image
-            src={TypescriptIcon}
-            alt="Linux"
-            width={38}
-            height={38}
-          />
+          <Image src={TypescriptIcon} alt="Linux" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Vim">
-          <Image
-            src={VimIcon}
-            alt="Linux"
-            width={38}
-            height={38}
-          />
+          <Image src={VimIcon} alt="Linux" width={38} height={38} />
         </SkillsItem>
       </div>
     </section>

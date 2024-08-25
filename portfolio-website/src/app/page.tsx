@@ -1,5 +1,6 @@
 import Home from '~/Sections/Home'
 import Skills from '~/Sections/Skills'
+import Timeline from '~/Sections/Timeline'
 import Header from '~/components/Navbar'
 import NavButtons from '~/components/ui/NavButtons'
 import { LampDemo } from '~/components/ui/lamp'
@@ -14,6 +15,7 @@ export default function HomePage() {
       <LampDemo />
       <Home />
       <Skills />
+      <Timeline />
     </main>
   )
 }

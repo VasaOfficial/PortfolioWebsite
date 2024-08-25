@@ -29,15 +29,8 @@ export default function ModalSetLang() {
     }
 
     if (isShow) {
-      document.addEventListener(
-        'mousedown',
-        handleClickOutside,
-      )
-      return () =>
-        document.removeEventListener(
-          'mousedown',
-          handleClickOutside,
-        )
+      document.addEventListener('mousedown', handleClickOutside)
+      return () => document.removeEventListener('mousedown', handleClickOutside)
     }
   }, [isShow])
 
@@ -56,42 +49,27 @@ export default function ModalSetLang() {
       >
         <ul>
           <li>
-            <Link
-              href="/?setLn=en"
-              className="grho grho__sml"
-            >
+            <Link href="/?setLn=en" className="grho grho__sml">
               English
             </Link>
           </li>
           <li>
-            <Link
-              href="/?setLn=fr"
-              className="grho grho__sml"
-            >
+            <Link href="/?setLn=fr" className="grho grho__sml">
               French - Français
             </Link>
           </li>
           <li>
-            <Link
-              href="/?setLn=pl"
-              className="grho grho__sml"
-            >
+            <Link href="/?setLn=pl" className="grho grho__sml">
               Polish - Polski
             </Link>
           </li>
           <li>
-            <Link
-              href="/?setLn=es"
-              className="grho grho__sml"
-            >
+            <Link href="/?setLn=es" className="grho grho__sml">
               Spanish - Español
             </Link>
           </li>
           <li>
-            <Link
-              href="/?setLn=de"
-              className="grho grho__sml"
-            >
+            <Link href="/?setLn=de" className="grho grho__sml">
               German - Deutsch
             </Link>
           </li>

@@ -15,16 +15,16 @@ type ActiveSectionContextType = {
   setTimeOfLastClick: Dispatch<SetStateAction<number>>
 }
 
-const ActiveSectionContext =
-  createContext<ActiveSectionContextType | null>(null)
+const ActiveSectionContext = createContext<ActiveSectionContextType | null>(
+  null,
+)
 
 export const ActiveSectionContextProvider = ({
   children,
 }: {
   children: React.ReactNode
 }) => {
-  const [activeSection, setActiveSection] =
-    useState<SectionName>('Home')
+  const [activeSection, setActiveSection] = useState<SectionName>('Home')
   const [timeOfLastClick, setTimeOfLastClick] = useState(0)
 
   return (

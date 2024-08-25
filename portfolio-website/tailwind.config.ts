@@ -6,14 +6,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          'var(--font-geist-sans)',
-          ...fontFamily.sans,
-        ],
+        sans: ['var(--font-geist-sans)', ...fontFamily.sans],
       },
       colors: {
         customGray: '#19181b',
-        customGreen: '#2BB4BF',
+        customGreen: '#2DD4BF',
       },
     },
   },

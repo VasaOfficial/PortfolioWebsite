@@ -1,21 +1,14 @@
 'use client'
 import Link from 'next/link'
-import {
-  MotionDiv,
-  MotionLi,
-  MotionSpan,
-} from '~/utils/framer'
+import { MotionDiv, MotionLi, MotionSpan } from '~/utils/framer'
 import { links } from '~/lib/data'
 import { useActiveSectionContext } from '~/lib/context'
 
 import clsx from 'clsx'
 
 export default function Header() {
-  const {
-    activeSection,
-    setActiveSection,
-    setTimeOfLastClick,
-  } = useActiveSectionContext()
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext()
 
   return (
     <header className="relative z-[999]">

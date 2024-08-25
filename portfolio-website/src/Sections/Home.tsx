@@ -1,9 +1,6 @@
 'use client'
 import { useState } from 'react'
-import {
-  AiOutlineGithub,
-  AiFillLinkedin,
-} from 'react-icons/ai'
+import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai'
 import { IoMailOutline } from 'react-icons/io5'
 import { useTranslation } from 'react-i18next'
 import toast, { Toaster } from 'react-hot-toast'
@@ -64,17 +61,14 @@ export default function Home() {
         <div className="text-left">
           <p className="max-w-[600px]">
             <code>
-              Hi! I&apos;m Patryk and I&apos;m a front-end
-              developer with 3+ years of experience. I
-              specialize in creating modern responsive
-              websites, browser extensions, progressive web
-              applications, client-side code optimisations
-              and more. I love to code from scratch, but I
-              can deliver the HTML, CSS, and JS you need
-              packaged within a modern web framework. I
-              achieve high-quality products with a proven
-              software development process. Take a look at
-              my profile and, let&apos;s chat!
+              Hi! I&apos;m Patryk and I&apos;m a front-end developer with 3+
+              years of experience. I specialize in creating modern responsive
+              websites, browser extensions, progressive web applications,
+              client-side code optimisations and more. I love to code from
+              scratch, but I can deliver the HTML, CSS, and JS you need packaged
+              within a modern web framework. I achieve high-quality products
+              with a proven software development process. Take a look at my
+              profile and, let&apos;s chat!
             </code>
           </p>
         </div>
@@ -116,13 +110,9 @@ export default function Home() {
                 </a>
                 <button
                   onClick={copyEmail}
-                  className={
-                    isError ? 'textlnk' : 'grho grho__sml'
-                  }
+                  className={isError ? 'textlnk' : 'grho grho__sml'}
                 >
-                  {isError
-                    ? 'pjaworski.dev@gmail.com'
-                    : t('hero.email-copy')}
+                  {isError ? 'pjaworski.dev@gmail.com' : t('hero.email-copy')}
                 </button>
               </div>
             </div>
