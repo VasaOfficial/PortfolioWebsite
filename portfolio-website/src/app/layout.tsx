@@ -14,9 +14,14 @@ export const metadata: Metadata = {
   icons: [{ rel: 'icon', url: '/favicon.ico' }],
 }
 // !scroll-smooth
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`scroll-smooth ${NotoSans.className}`}>
+    <html
+      lang="en"
+      className={`scroll-smooth ${NotoSans.className}`}
+    >
       <body>
         <ActiveSectionContextProvider>
           {children}

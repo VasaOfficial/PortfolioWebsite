@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react'
 import ModalSetLang from './ModalSetLang'
-import '~/styles/navbuttons.css'
 
 export default function NavButtons() {
   const [isLight, setIsLight] = useState(true)
@@ -12,7 +11,9 @@ export default function NavButtons() {
       <button
         onClick={hocToggleLightmode}
         className="header__theme-btn cursor-pointer ring-white ring-opacity-60 focus:outline-none focus:ring-4"
-        title={isLight ? 'main.theme.dark' : 'main.theme.light'}
+        title={
+          isLight ? 'main.theme.dark' : 'main.theme.light'
+        }
       >
         {isLight ? (
           <svg viewBox="0 0 53.6 54.1">

@@ -20,14 +20,24 @@ export default function ModalSetLang() {
   // close modal on click outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target as Node)
+      ) {
         setIsShow(false)
       }
     }
 
     if (isShow) {
-      document.addEventListener('mousedown', handleClickOutside)
-      return () => document.removeEventListener('mousedown', handleClickOutside)
+      document.addEventListener(
+        'mousedown',
+        handleClickOutside,
+      )
+      return () =>
+        document.removeEventListener(
+          'mousedown',
+          handleClickOutside,
+        )
     }
   }, [isShow])
 
@@ -46,19 +56,44 @@ export default function ModalSetLang() {
       >
         <ul>
           <li>
-            <Link href="/?setLn=en">English</Link>
+            <Link
+              href="/?setLn=en"
+              className="grho grho__sml"
+            >
+              English
+            </Link>
           </li>
           <li>
-            <Link href="/?setLn=fr">French - Français</Link>
+            <Link
+              href="/?setLn=fr"
+              className="grho grho__sml"
+            >
+              French - Français
+            </Link>
           </li>
           <li>
-            <Link href="/?setLn=pl">Polish - Polski</Link>
+            <Link
+              href="/?setLn=pl"
+              className="grho grho__sml"
+            >
+              Polish - Polski
+            </Link>
           </li>
           <li>
-            <Link href="/?setLn=es">Spanish - Español</Link>
+            <Link
+              href="/?setLn=es"
+              className="grho grho__sml"
+            >
+              Spanish - Español
+            </Link>
           </li>
           <li>
-            <Link href="/?setLn=de">German - Deutsch</Link>
+            <Link
+              href="/?setLn=de"
+              className="grho grho__sml"
+            >
+              German - Deutsch
+            </Link>
           </li>
         </ul>
       </div>
