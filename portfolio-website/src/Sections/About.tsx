@@ -79,26 +79,28 @@ export default function Home() {
             </code>
           </p>
         </div>
-        <div className="hero_block hero_socials">
-          <div className="hero_socials__links">
-            <a
+        <div className="hero_socials flex">
+          <div className="hero_socials__links flex">
+            <Link
               href="https://github.com/gerwld"
               data-title="Github"
               target="_blank"
               rel="noopener"
+              className="grho grho__sml"
             >
               <AiOutlineGithub />
               Github
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/p-jaworski"
               data-title="Linkedin"
               target="_blank"
               rel="noopener"
+              className="grho grho__sml"
             >
               <AiFillLinkedin />
               Linkedin
-            </a>
+            </Link>
             <div className="hero_socials__email">
               <button
                 className="hero_socials__embtn"
@@ -122,13 +124,13 @@ export default function Home() {
                   {isError ? 'pjaworski.dev@gmail.com' : t('hero.email-copy')}
                 </button>
               </div>
-              <div className="hero_socials__links">
-                <Link href="/CV.pdf" className="grho grho__sml">
-                  Download CV
-                  <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
-                </Link>
-              </div>
             </div>
+            <button className='flex grho grho__sml ml-2 border-2 px-1 pl-3 rounded-3xl border-customGreen cursor-pointer'>
+              <p className='text-customGreen'>Download CV</p>
+              <div className="grho grho__sml ml-1 text-customGreen">
+                <HiDownload />
+              </div>
+            </button>
           </div>
         </div>
       </div>

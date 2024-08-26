@@ -18,7 +18,7 @@ export default function ExperienceSection() {
     <div ref={ref} className="relative mb-28 scroll-mt-28 sm:mb-40">
       <div>
         <div>
-          <VerticalTimeline animate lineColor="#2DD4BF">
+          <VerticalTimeline animate lineColor="#186D6B">
             {devExperiencesData.map((item, index) => (
               <React.Fragment key={index}>
                 <VerticalTimelineElement
@@ -34,12 +34,12 @@ export default function ExperienceSection() {
                   contentArrowStyle={{
                     borderRight:
                       theme === 'light'
-                        ? '.4rem solid  #2DD4BF'
-                        : '.4rem solid #2DD4BF',
+                        ? '.4rem solid  #186D6B'
+                        : '.4rem solid #186D6B',
                   }}
                   date={item.date}
                   iconStyle={{
-                    background: theme === 'light' ? 'white' : '#2DD4BF',
+                    background: theme === 'light' ? 'white' : '#186D6B',
                     fontSize: '1.5rem',
                   }}
                 >
