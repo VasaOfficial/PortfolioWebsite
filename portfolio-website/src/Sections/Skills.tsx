@@ -23,7 +23,7 @@ import { useSectionInView } from '~/lib/hooks'
 export default function Skills() {
   const { ref } = useSectionInView('Skills')
   return (
-    <div ref={ref} className="mx-auto my-40 max-w-[50%]">
+    <div ref={ref} className="mx-auto my-40 max-w-[50%] max-sm:justify-center max-sm:max-w-[85%]">
       <div className="-mr-2.5 flex flex-wrap items-stretch justify-start grayscale-[0.3]">
         <SkillsItem title="Linux">
           <Image src={LinuxIcon} alt="Linux" width={38} height={38} />

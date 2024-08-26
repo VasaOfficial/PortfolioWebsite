@@ -7,7 +7,7 @@ import { LampDemo } from '~/components/ui/lamp'
 
 export default function HomePage() {
   return (
-    <main className="flex h-auto min-h-screen flex-col bg-slate-950">
+    <main className="flex h-auto min-h-screen w-full flex-col bg-slate-950">
       <Header />
       <section id="home">
         <LampDemo />

@@ -31,11 +31,6 @@ type devExperience = {
 export const devExperiencesData: readonly devExperience[] = [
   {
     title: 'Completed several Udemy online courses',
-    courses: [
-      "Colt Steele's Web Developer Bootcamp",
-      'Advanced CSS and SASS by Jonas Schmedtmann',
-      'Complete JavaScript Course by Jonas Schmedtmann',
-    ],
     description:
       'Even though my goal was to focus on more modern web development technologies, I decided to start with the basics. I completed several online courses to get a solid foundation in web development.',
     date: 'August 2023 - October 2023',
@@ -49,7 +44,6 @@ export const devExperiencesData: readonly devExperience[] = [
   },
   {
     title: "Completed Jonas Schmedtmann's The Ultimate React Course",
-    courses: ['The Ultimate React Course by Jonas Schmedtmann'],
     description:
       "After finishing my first project I continued with focusing on React, so I completed Jonas Schmedtmann's React course and started planning my next solo project.",
     date: 'January 2024',
@@ -63,11 +57,6 @@ export const devExperiencesData: readonly devExperience[] = [
   },
   {
     title: 'Started learning Next.js',
-    courses: [
-      'Next.js by Example',
-      "Jonas Schmedtmann's Next.js course",
-      'JSM Ultimate Next JS course',
-    ],
     description:
       'After going through projects and courses with plain JavaScript, and then React, I decided to focus all of my time on learning and mastering Next.js, so I completed several courses and code-alongs to get as much code through my fingers as possible.',
     date: 'March 2024 - indefinitely',

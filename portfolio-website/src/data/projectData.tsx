@@ -19,7 +19,10 @@ export const projects: projects[] = [
       'EarthSensor provides air pollution and weather information for cities around the world. The app fetches data from the Aqicn REST API and presents it in a user-friendly format using graphs.',
     links: [
       { href: 'https://earth-sensor.vercel.app/', label: 'Live Preview' },
-      { href: 'https://github.com/VasaOfficial/EarthSensor', label: 'View Source' },
+      {
+        href: 'https://github.com/VasaOfficial/EarthSensor',
+        label: 'View Source',
+      },
     ],
     image: {
       src: EarthSensorImage,
@@ -33,7 +36,10 @@ export const projects: projects[] = [
       'An landing page for the interior painting business. Made with TypeScript and React.',
     links: [
       { href: 'https://moleraj-beograd.vercel.app/', label: 'Live Preview' },
-      { href: 'https://github.com/VasaOfficial/MolerajSajt', label: 'View Source' },
+      {
+        href: 'https://github.com/VasaOfficial/MolerajSajt',
+        label: 'View Source',
+      },
     ],
     image: {
       src: InteriorPaintingImage,
@@ -42,16 +48,22 @@ export const projects: projects[] = [
   },
   {
     title: 'MovieLibrary',
-    stack: ['OpenAI','TypeScript', 'React', 'Next.js'],
+    stack: ['OpenAI', 'TypeScript', 'React', 'Next.js'],
     description:
       'An AI based tool for movie and tv shows searching and recommendations.',
     links: [
-      { href: 'https://github.com/VasaOfficial/MovieLibrary', label: 'Live Preview' },
-      { href: 'https://github.com/VasaOfficial/MovieLibrary', label: 'View Source' },
+      {
+        href: 'https://github.com/VasaOfficial/MovieLibrary',
+        label: 'Live Preview',
+      },
+      {
+        href: 'https://github.com/VasaOfficial/MovieLibrary',
+        label: 'View Source',
+      },
     ],
     image: {
       src: MovieLibraryImage,
       alt: 'MovieLibrary',
     },
   },
-];
+]

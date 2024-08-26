@@ -20,7 +20,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`scroll-smooth ${NotoSans.className}`}>
-      <body>
+      <body className='w-full overflow-x:hidden h-auto'>
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             {children}

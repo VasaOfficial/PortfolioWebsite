@@ -54,7 +54,7 @@ export default function ExperienceSection() {
                         ))}
                     </ul>
                   )}
-                  <p className="!dark:text-white/50 !mt-1 !font-normal !text-gray-700">
+                  <p className="!dark:text-white/50 !mt-1 !font-medium !text-customGreen2">
                     {item.description}
                   </p>
                 </VerticalTimelineElement>

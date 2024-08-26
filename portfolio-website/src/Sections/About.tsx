@@ -18,16 +18,19 @@ export default function Home() {
   const [isError, setError] = useState(false)
 
   function copyToClipboard(text: string) {
-    navigator.clipboard.writeText(text).then(() => {
-      toast.success(t('email copied'), {
-        duration: 2000,
-      });
-    }).catch(() => {
-      toast.error(t('notifications.email-ns'), {
-        duration: 2000,
-      });
-      setError(true);
-    });
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        toast.success(t('email copied'), {
+          duration: 2000,
+        })
+      })
+      .catch(() => {
+        toast.error(t('notifications.email-ns'), {
+          duration: 2000,
+        })
+        setError(true)
+      })
   }
 
   const copyEmail = () => {
@@ -65,26 +68,31 @@ export default function Home() {
   return (
     <div
       ref={ref}
-      className="z-50 m-auto mt-28 flex w-full max-w-[50%] justify-between"
+      className="z-50 max-lg:flex-col max-lg:items-center lg:max-w-[80%] max-lg:max-w-[90%] m-auto mt-28 flex w-full 2xl:max-w-[50%] justify-between"
     >
       <Toaster />
-      <div className="flex flex-col items-start">
+      <div className="flex flex-col items-start max-lg:items-center">
         <div className="text-left">
-          <p className="max-w-[600px]">
+          <p className="max-w-[600px] max-lg:text-center">
             <code>
-              I&apos;m a DevOps Engineer with a previous experience in Software Development. I have 1 year of experience in DevOps and also 1 year of experience in Software Development. As a Devops Engineer I have been mostly working with AWS, Docker and CI/CD, as for the Software Development I have been mostly working on backend development using node and postgresql but also working on frontend development using React and Typescript when necessary.
-
+              I&apos;m a DevOps Engineer with a previous experience in Software
+              Development. I have 1 year of experience in DevOps and also 1 year
+              of experience in Software Development. As a Devops Engineer I have
+              been mostly working with AWS, Docker and CI/CD, as for the
+              Software Development I have been mostly working on backend
+              development using node and postgresql but also working on frontend
+              development using React and Typescript when necessary.
               <br />
-
               <br />
-
-              When Im not coding I like to spend my time walking my cat Dio 🐈 (he is orange and silly ), playing video games, hanging out with my friends and reading history books.
+              When Im not coding I like to spend my time walking my cat Dio 🐈
+              (he is orange and silly ), playing video games, hanging out with
+              my friends and reading history books.
             </code>
           </p>
         </div>
-        <div className="flex">
-          <div className="hero_socials__links flex">
-            <div className='hero_socials '>
+        <div className="flex max-sm:items-center max-sm:m-auto">
+          <div className="hero_socials__links flex max-sm:items-center max-sm:justify-center max-lg:mt-5">
+            <div className="hero_socials">
               <Link
                 href="https://github.com/VasaOfficial"
                 data-title="Github"
@@ -125,21 +133,27 @@ export default function Home() {
                     onClick={copyEmail}
                     className={isError ? 'textlnk' : 'grho grho__sml'}
                   >
-                    {isError ? 'vasapofficial@gmail.com' : t('Copy to clipboard')}
+                    {isError
+                      ? 'vasapofficial@gmail.com'
+                      : t('Copy to clipboard')}
                   </button>
                 </div>
               </div>
             </div>
-            <Link href='/Resume.pdf' download='VasilijePleskonjic_CV.pdf' className='flex grho grho__sml ml-2 border-2 px-2 rounded-lg border-customGreen cursor-pointer'>
-              <p className='text-customGreen'>Download CV</p>
-              <div className="grho grho__sml m-auto ml-1 text-customGreen hero_super">
+            <Link
+              href="/Resume.pdf"
+              download="VasilijePleskonjic_CV.pdf"
+              className="grho grho__sml ml-2 flex cursor-pointer rounded-lg border-2 border-customGreen px-2"
+            >
+              <p className="text-customGreen">Download CV</p>
+              <div className="grho grho__sml hero_super m-auto ml-1 text-customGreen">
                 <HiDownload />
               </div>
             </Link>
           </div>
         </div>
       </div>
-      <div>
+      <div className='max-lg:mt-10'>
         <div className="rfc">
           <div className="rfcg rfcg-1"></div>
           <div className="rfcg rfcg-2"></div>

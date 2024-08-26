@@ -11,7 +11,7 @@ export default function Header() {
     useActiveSectionContext()
 
   return (
-    <header className="relative z-[999]">
+    <header className="relative z-[999] ">
       <MotionDiv
         initial={{ y: -200, x: '-50%', opacity: 0 }}
         animate={{ y: 0, x: '-50%', opacity: 1 }}
