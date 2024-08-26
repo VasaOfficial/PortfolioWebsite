@@ -276,6 +276,14 @@ body.lightModeOn .modal_l03 {
   text-align: center;
 }
 
+.hero_super {
+  display: block;
+  font-size: 28px;
+  width: 28px;
+  height: 28px;
+  transform: translateX(-0.5px);
+}
+
 .hero_socials a:nth-last-child(1) {
   margin-right: 0;
 }
@@ -294,7 +302,6 @@ body.lightModeOn .modal_l03 {
 .hero_socials__links > a {
   position: relative;
   color: var(--basic-link-color);
-  border-radius: 8px;
 }
 
 .hero_socials__embtn:hover,

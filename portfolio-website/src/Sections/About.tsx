@@ -18,27 +18,31 @@ export default function Home() {
   const [isError, setError] = useState(false)
 
   function copyToClipboard(text: string) {
-    const dummy = document.createElement('input')
-    document.body.appendChild(dummy)
-    dummy.setAttribute('value', text)
-    dummy.select()
-    document.execCommand('copy')
-    document.body.removeChild(dummy)
+    navigator.clipboard.writeText(text).then(() => {
+      toast.success(t('email copied'), {
+        duration: 2000,
+      });
+    }).catch(() => {
+      toast.error(t('notifications.email-ns'), {
+        duration: 2000,
+      });
+      setError(true);
+    });
   }
 
   const copyEmail = () => {
-    const cp = 'pjaworski.dev@gmail.com'
+    const cp = 'vasapofficial@gmail.com'
     if (!isError) {
       if (!navigator.clipboard) {
         copyToClipboard(cp)
-        toast.success(t('notifications.email-copied'), {
+        toast.success(t('email copied'), {
           duration: 2000,
         })
       } else {
         navigator.clipboard
           .writeText(cp)
           .then(() => {
-            toast.success(t('notifications.email-copied'), {
+            toast.success(t('email copied'), {
               duration: 2000,
             })
           })
@@ -53,7 +57,7 @@ export default function Home() {
   }
 
   const openEmail = () => {
-    toast.loading(t('notifications.email-client'), {
+    toast.loading(t('email sending'), {
       duration: 2000,
     })
   }
@@ -68,69 +72,70 @@ export default function Home() {
         <div className="text-left">
           <p className="max-w-[600px]">
             <code>
-              Hi! I&apos;m Patryk and I&apos;m a front-end developer with 3+
-              years of experience. I specialize in creating modern responsive
-              websites, browser extensions, progressive web applications,
-              client-side code optimisations and more. I love to code from
-              scratch, but I can deliver the HTML, CSS, and JS you need packaged
-              within a modern web framework. I achieve high-quality products
-              with a proven software development process. Take a look at my
-              profile and, let&apos;s chat!
+              I&apos;m a DevOps Engineer with a previous experience in Software Development. I have 1 year of experience in DevOps and also 1 year of experience in Software Development. As a Devops Engineer I have been mostly working with AWS, Docker and CI/CD, as for the Software Development I have been mostly working on backend development using node and postgresql but also working on frontend development using React and Typescript when necessary.
+
+              <br />
+
+              <br />
+
+              When Im not coding I like to spend my time walking my cat Dio 🐈 (he is orange and silly ), playing video games, hanging out with my friends and reading history books.
             </code>
           </p>
         </div>
-        <div className="hero_socials flex">
+        <div className="flex">
           <div className="hero_socials__links flex">
-            <Link
-              href="https://github.com/gerwld"
-              data-title="Github"
-              target="_blank"
-              rel="noopener"
-              className="grho grho__sml"
-            >
-              <AiOutlineGithub />
-              Github
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/p-jaworski"
-              data-title="Linkedin"
-              target="_blank"
-              rel="noopener"
-              className="grho grho__sml"
-            >
-              <AiFillLinkedin />
-              Linkedin
-            </Link>
-            <div className="hero_socials__email">
-              <button
-                className="hero_socials__embtn"
-                data-title={t('hero.email-lable')}
+            <div className='hero_socials '>
+              <Link
+                href="https://github.com/VasaOfficial"
+                data-title="Github"
+                target="_blank"
+                rel="noopener"
+                className="grho grho__sml"
               >
-                <IoMailOutline />
-                Email
-              </button>
-              <div className="hero_socials__dropdown">
-                <a
-                  onClick={openEmail}
-                  href="mailto:pjaworski.dev@gmail.com"
-                  className="grho grho__sml"
-                >
-                  {t('hero.email-client')}
-                </a>
+                <AiOutlineGithub />
+                Github
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/vasilijepleskonjicofficial/"
+                data-title="Linkedin"
+                target="_blank"
+                rel="noopener"
+                className="grho grho__sml"
+              >
+                <AiFillLinkedin />
+                Linkedin
+              </Link>
+              <div className="hero_socials__email">
                 <button
-                  onClick={copyEmail}
-                  className={isError ? 'textlnk' : 'grho grho__sml'}
+                  className="hero_socials__embtn"
+                  data-title={t('hero.email-lable')}
                 >
-                  {isError ? 'pjaworski.dev@gmail.com' : t('hero.email-copy')}
+                  <IoMailOutline />
+                  Email
                 </button>
+                <div className="hero_socials__dropdown">
+                  <a
+                    onClick={openEmail}
+                    href="mailto:vasapofficial@gmail.com"
+                    className="grho grho__sml"
+                  >
+                    {t('Open email client')}
+                  </a>
+                  <button
+                    onClick={copyEmail}
+                    className={isError ? 'textlnk' : 'grho grho__sml'}
+                  >
+                    {isError ? 'vasapofficial@gmail.com' : t('Copy to clipboard')}
+                  </button>
+                </div>
               </div>
             </div>
-            <button className='flex grho grho__sml ml-2 border-2 px-1 pl-3 rounded-3xl border-customGreen cursor-pointer'>
+            <Link href='/Resume.pdf' download='VasilijePleskonjic_CV.pdf' className='flex grho grho__sml ml-2 border-2 px-2 rounded-lg border-customGreen cursor-pointer'>
               <p className='text-customGreen'>Download CV</p>
-              <div className="grho grho__sml ml-1 text-customGreen">
+              <div className="grho grho__sml m-auto ml-1 text-customGreen hero_super">
                 <HiDownload />
               </div>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
