@@ -18,6 +18,7 @@ import ReactIcon from '../../public/assets/skills/react.svg'
 import TerraformIcon from '../../public/assets/skills/terraform.svg'
 import TypescriptIcon from '../../public/assets/skills/typescript.svg'
 import VimIcon from '../../public/assets/skills/vim.svg'
+import GithubActionIcon from '../../public/assets/skills/GitHub Actions.svg'
 import { useSectionInView } from '~/lib/hooks'
 
 export default function Skills() {
@@ -26,63 +27,67 @@ export default function Skills() {
     <div ref={ref} className="mx-auto my-40 max-w-[50%] max-sm:justify-center max-sm:max-w-[85%]">
       <div className="-mr-2.5 flex flex-wrap items-stretch justify-start grayscale-[0.3]">
         <SkillsItem title="Linux">
-          <Image src={LinuxIcon} alt="Linux" width={38} height={38} />
+          <Image src={LinuxIcon} alt="Linux Icon" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="AWS">
-          <Image src={AwsIcon} alt="Linux" width={38} height={38} />
+          <Image src={AwsIcon} alt="AWS Icon" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Docker">
-          <Image src={DockerIcon} alt="Linux" width={38} height={38} />
+          <Image src={DockerIcon} alt="Docker Icon" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Github">
-          <Image src={GitIcon} alt="Linux" width={38} height={38} />
+          <Image src={GitIcon} alt="Github Icon" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Javascript">
-          <Image src={JavascriptIcon} alt="Linux" width={38} height={38} />
+          <Image src={JavascriptIcon} alt="Javascript Icon" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Jenkins">
-          <Image src={JenkinsIcon} alt="Linux" width={38} height={38} />
+          <Image src={JenkinsIcon} alt="Jenkins Icon" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Kubernetes">
-          <Image src={KubernetesIcon} alt="Linux" width={38} height={38} />
+          <Image src={KubernetesIcon} alt="Kubernetes Icon" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Next.js">
-          <Image src={NextjsIcon} alt="Linux" width={38} height={38} />
+          <Image src={NextjsIcon} alt="Next.js Icon" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Node.js">
-          <Image src={NodejsIcon} alt="Linux" width={38} height={38} />
+          <Image src={NodejsIcon} alt="Node.js Icon" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Postgresql">
-          <Image src={PostgresqlIcon} alt="Linux" width={38} height={38} />
+          <Image src={PostgresqlIcon} alt="Postgresql Icon" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Python">
-          <Image src={PythonIcon} alt="Linux" width={38} height={38} />
+          <Image src={PythonIcon} alt="Python Icon" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="React">
-          <Image src={ReactIcon} alt="Linux" width={38} height={38} />
+          <Image src={ReactIcon} alt="React Icon" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Terraform">
-          <Image src={TerraformIcon} alt="Linux" width={38} height={38} />
+          <Image src={TerraformIcon} alt="Terraform Icon" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Typescript">
-          <Image src={TypescriptIcon} alt="Linux" width={38} height={38} />
+          <Image src={TypescriptIcon} alt="Typescript Icon" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Vim">
-          <Image src={VimIcon} alt="Linux" width={38} height={38} />
+          <Image src={VimIcon} alt="Vim" width={38} height={38} />
+        </SkillsItem>
+
+        <SkillsItem title="Github Action">
+          <Image src={GithubActionIcon} alt="GithubAction" width={38} height={38} />
         </SkillsItem>
       </div>
     </div>
