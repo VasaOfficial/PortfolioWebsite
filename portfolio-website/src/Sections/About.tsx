@@ -5,7 +5,7 @@ import { IoMailOutline } from 'react-icons/io5'
 import { useTranslation } from 'react-i18next'
 import toast, { Toaster } from 'react-hot-toast'
 import Image from 'next/image'
-import MyImage from '../../public/assets/wp1892227.jpg'
+import MyImage from '../../public/assets/profile.png'
 import { HiDownload } from 'react-icons/hi'
 import Link from 'next/link'
 import { useSectionInView } from '~/lib/hooks'
@@ -258,12 +258,13 @@ export default function Home() {
           <div className="rfcc hero_pfp">
             <picture>
               <Image
-                className="img-fluid"
+                className="img-fluid object-cover"
                 width={250}
                 height={250}
                 quality={100}
                 src={MyImage}
                 alt="Profile Picture"
+                style={{ objectFit: 'cover' }}
               />
             </picture>
           </div>
