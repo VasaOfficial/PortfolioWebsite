@@ -30,42 +30,21 @@ type devExperience = {
 }
 export const devExperiencesData: readonly devExperience[] = [
   {
-    title: 'Completed several Udemy online courses',
+    title: 'Devops Engineer',
     description:
-      'Even though my goal was to focus on more modern web development technologies, I decided to start with the basics. I completed several online courses to get a solid foundation in web development.',
-    date: 'August 2023 - October 2023',
+      'After diving deep into cloud infrastructure and automation I started to really enjoy working with cloud/devops. In 2023, as I was getting more and more comfortable with it, I took a role as a DevOps Engineer in the same company. I’ve been optimizing infrastructure by migrating apps into Docker, setting up CI/CD pipelines with GitHub Actions, making deployments faster and more reliable. I have also worked with Kubernetes and even tho it was really challenging at times, I really enjoyed it. Plus, Terraform has been my go-to tool for automating environments and infrastructure management. I am always looking for new ways to improve my skills and stay up-to-date with the latest industry trends.',
+    date: 'August 2023 – Present',
   },
   {
-    title: 'Built my first solo project (Static website)',
-    stack: ['HTML', 'SCSS', 'JavaScript'],
+    title: 'Full-Stack Software Developer',
     description:
-      'My first project was a static website for a small local handcraft business.',
-    date: 'November 2023 - December 2023',
+      'In 2020 I have started to learn software development, and in 2022 I took on my first full-stack role, where I worked on a microservice-based architecture. Using Node.js/TypeScript with AWS Lambda and DynamoDB. I have also worked with React and Next.js on the front-end, making sure it was user-friendly and accessible.',
+    date: 'June 2022 – August 2023',
   },
   {
-    title: "Completed Jonas Schmedtmann's The Ultimate React Course",
+    title: "Computer Technician",
     description:
-      "After finishing my first project I continued with focusing on React, so I completed Jonas Schmedtmann's React course and started planning my next solo project.",
-    date: 'January 2024',
-  },
-  {
-    title: 'Built my first SPA project with React',
-    stack: ['React', 'Tailwind CSS', 'Supabase'],
-    description:
-      'I decided to build an app for myself, as I never really liked native browser bookmarks. So I built a simple CRUD application for saving and categorizing bookmarks for my favourite resources for learning web development.',
-    date: 'February 2024 - March 2024',
-  },
-  {
-    title: 'Started learning Next.js',
-    description:
-      'After going through projects and courses with plain JavaScript, and then React, I decided to focus all of my time on learning and mastering Next.js, so I completed several courses and code-alongs to get as much code through my fingers as possible.',
-    date: 'March 2024 - indefinitely',
-  },
-  {
-    title: 'Completed corporate blog website',
-    stack: ['Next.js', 'Tailwind CSS'],
-    description:
-      'After diving into multiple full-stack projects with Next.js, I decided to take a small turn back to the front-end and build a corporate blog website focusing on clean design and high performance.',
-    date: 'June 2024',
-  },
+      "I began my tech career as a computer technician back in 2019. From diagnosing hardware issues to fixing and replacing parts, I became the go-to person for getting systems back up and running. I also handled software reinstallations and configurations, ensuring everything worked smoothly for my clients. It was a hands-on role that taught me a lot about troubleshooting and problem-solving.",
+    date: 'September 2019 – May 2022',
+  }
 ] as const

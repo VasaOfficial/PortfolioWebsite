@@ -85,8 +85,8 @@ export default function Home() {
               <br />
               <br />
               When Im not coding I like to spend my time walking my cat Dio 🐈
-              (he is orange and silly ), playing video games, hanging out with
-              my friends and reading history books.
+              (he is orange and silly ), playing basketball, hanging out with
+              my friends and reading books.
             </code>
           </p>
         </div>
@@ -140,16 +140,16 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <Link
-              href="/Resume.pdf"
-              download="VasilijePleskonjic_CV.pdf"
+            <a
+              href="/assets/Vasilije-Pleskonjic-CV.pdf"
+              download="Vasilije-Pleskonjic-CV.pdf"
               className="grho grho__sml ml-2 flex cursor-pointer rounded-lg border-2 border-customGreen px-2"
             >
               <p className="text-customGreen">Download CV</p>
               <div className="grho grho__sml hero_super m-auto ml-1 text-customGreen">
                 <HiDownload />
               </div>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
