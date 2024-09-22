@@ -39,7 +39,7 @@ export default function Projects() {
             </div>
           </div>
           <Image
-            className="h-auto rounded"
+            className="rounded"
             src={project.image.src}
             alt={project.image.alt}
             width={350}
