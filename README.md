@@ -11,7 +11,3 @@ Welcome to my personal portfolio! This website showcases my projects, skills, an
 - Responsive design for all devices
 - Showcase of projects with descriptions and links
 - Contact form for inquiries
-
-## Live Demo
-
-Check out the live version of my portfolio at: [my-website](vasilije-pleskonjic-portfolio.vercel.app)
