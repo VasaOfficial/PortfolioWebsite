@@ -17,11 +17,11 @@ import PythonIcon from '../../public/assets/skills/python.svg'
 import ReactIcon from '../../public/assets/skills/react.svg'
 import TerraformIcon from '../../public/assets/skills/terraform.svg'
 import TypescriptIcon from '../../public/assets/skills/typescript.svg'
-import VimIcon from '../../public/assets/skills/vim.svg'
 import GithubActionIcon from '../../public/assets/skills/GitHub Actions.svg'
 import GrafanaIcon from '../../public/assets/skills/grafana.svg'
 import PrometheusIcon from '../../public/assets/skills/prometheus.svg'
 import ArgoCDIcon from '../../public/assets/skills/Argo CD.svg'
+import AnsibleIcon from '../../public/assets/skills/ansible.svg'
 import { useSectionInView } from '~/lib/hooks'
 
 export default function Skills() {
@@ -85,8 +85,8 @@ export default function Skills() {
           <Image src={TypescriptIcon} alt="Typescript Icon" width={38} height={38} />
         </SkillsItem>
 
-        <SkillsItem title="Vim">
-          <Image src={VimIcon} alt="Vim" width={38} height={38} />
+        <SkillsItem title="Ansible">
+          <Image src={AnsibleIcon} alt="Ansible" width={38} height={38} />
         </SkillsItem>
 
         <SkillsItem title="Github Action">

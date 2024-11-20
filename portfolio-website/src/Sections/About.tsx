@@ -75,13 +75,11 @@ export default function Home() {
         <div className="text-left">
           <p className="max-w-[600px] max-lg:text-center">
             <code>
-              I&apos;m a DevOps Engineer with a previous experience in Software
-              Development. I have 1 year of experience in DevOps and also 1 year
-              of experience in Software Development. As a Devops Engineer I have
-              been mostly working with AWS, Docker and CI/CD, as for the
-              Software Development I have been mostly working on backend
-              development using node and postgresql but also working on frontend
-              development using React and Typescript when necessary.
+              I&apos;m a DevOps Engineer with previous experience in Software Development. I have 2.5 years of experience in Software Development and DevOps combined.
+              As a DevOps Engineer, I specialize in working with AWS, Docker, and CI/CD pipelines. My expertise includes migrating applications to Docker containers, implementing scalable architectures on AWS EKS, and automating infrastructure provisioning using tools like Terraform and Ansible. I also leverage GitOps practices with ArgoCD to ensure efficient and reliable Kubernetes deployments, and I design secure AWS IAM roles and policies to maintain fine-grained access control.
+              <br />
+              <br />
+              Previously, as a Software Developer, I focused on building and maintaining microservice architectures using JavaScript/TypeScript and AWS Lambda with DynamoDB. I have experience optimizing backend performance, enhancing frontend components with React, and ensuring seamless integrations between cross-functional teams to deliver exceptional user experiences.
               <br />
               <br />
               When Im not coding I like to spend my time walking my cat Dio 🐈

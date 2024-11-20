@@ -32,13 +32,17 @@ export const devExperiencesData: readonly devExperience[] = [
   {
     title: 'Devops Engineer',
     description:
-      'After diving deep into cloud infrastructure and automation I started to really enjoy working with cloud/devops. In 2023, as I was getting more and more comfortable with it, I took a role as a DevOps Engineer in the same company. I’ve been optimizing infrastructure by migrating apps into Docker, setting up CI/CD pipelines with GitHub Actions, making deployments faster and more reliable. I have also worked with Kubernetes and even tho it was really challenging at times, I really enjoyed it. Plus, Terraform has been my go-to tool for automating environments and infrastructure management. I am always looking for new ways to improve my skills and stay up-to-date with the latest industry trends.',
-    date: 'August 2023 – Present',
+      `In 2023, I transitioned into a DevOps Engineer role at the same company, diving deeper into cloud infrastructure, automation, and Kubernetes. I have optimized infrastructure by migrating Node.js and Python applications into Docker containers, significantly reducing costs and streamlining resource usage. I set up CI/CD pipelines with GitHub Actions, making deployments faster, more reliable, and easier to maintain.
+
+      Working with Kubernetes has been both challenging and rewarding, as I deployed scalable architectures on AWS EKS with features like auto-scaling using Karpenter. Terraform has remained my go-to tool for provisioning and managing infrastructure, while Ansible has helped automate configuration tasks across environments.
+
+      I’ve also embraced GitOps practices with ArgoCD for declarative configuration and automated Kubernetes deployments, and I’ve implemented secure IAM roles and policies to maintain fine-grained access control. I’m constantly seeking to improve my skills and stay up-to-date with the latest industry trends, ensuring I deliver impactful solutions to every project.`,
+      date: 'August 2023 – Present',
   },
   {
-    title: 'Full-Stack Software Developer',
+    title: 'Software Developer',
     description:
-      'In 2020 I have started to learn software development, and in 2022 I took on my first full-stack role, where I worked on a microservice-based architecture. Using Node.js/TypeScript with AWS Lambda and DynamoDB. I have also worked with React and Next.js on the front-end, making sure it was user-friendly and accessible.',
+      'In 2020 I have started to learn software development, and in 2022 I took on my first Software Developer role, where I worked on a microservice-based architecture. Using Node.js/TypeScript with AWS Lambda and DynamoDB. I have also worked with React and Next.js on the front-end, making sure it was user-friendly and accessible.',
     date: 'June 2022 – August 2023',
   },
   {
